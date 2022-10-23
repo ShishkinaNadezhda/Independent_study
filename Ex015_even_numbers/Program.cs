@@ -13,9 +13,6 @@ Console.Write("Введите второе число: ");
 string UsNum2 = Console.ReadLine() ?? "";
 double num2 = int.Parse(UsNum2);
 
-double num1_1 = num1/num2;
-// Console.WriteLine(num1_1);
-
 double res = num1 % num2;
 if (res > 0)
 {
