@@ -21,6 +21,6 @@ static int Coords(string msg)
 
 static double Distanse(int a1, int a2, int b1, int b2)
 {
-    double result = Math.Sqrt(Math.Pow(a2 - a1, 2) + Math.Pow(b2 - b1, 2));
+    double result = Math.Sqrt(Math.Pow(b1 - a1, 2) + Math.Pow(b2 - a2, 2));
     return result;
 }
