@@ -3,10 +3,12 @@
 // координаты не равняются нулю.
 
 Console.Write("Введите X: ");
-int X = int.Parse(Console.ReadLine() ?? "");
+string UsNumX = Console.ReadLine() ?? "";
+int X = int.Parse(UsNumX);
 
 Console.Write("Введите Y: ");
-int Y = int.Parse(Console.ReadLine() ?? "");
+string UsNumY = Console.ReadLine() ?? "";
+int Y = int.Parse(UsNumY);
 
 if (X > 0 && Y > 0)
     Console.WriteLine("1");
@@ -20,8 +22,6 @@ else if (X < 0 && Y < 0)
 else if (X < 0 && Y > 0)
     Console.WriteLine("4");
 
-else if (X == 0)
-    Console.WriteLine($"{X} неможет равняться нулю!");
+else
+    Console.WriteLine($"Ошибка! Точка попадает на оси координат!");
 
-else if (Y == 0)
-    Console.WriteLine($"{Y} неможет равняться нулю!");
