@@ -5,13 +5,18 @@
 
 Console.Write("Введите число: ");
 int N = int.Parse(Console.ReadLine() ?? "");
-int a = 1;
-int fact = 1;
+int fact = GetFactorial(N);
+Console.Write(fact);
 
-while (a <= N)
+static int GetFactorial(int N)
 {
-    fact = a * fact;
-    a++;
-}
-Console.WriteLine($"{fact}");
+    int a = 1;
+    int fact = 1;
 
+    while (a <= N)
+    {
+       fact = a * fact;
+        a++;
+    }
+    return fact;
+}
