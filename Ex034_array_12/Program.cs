@@ -5,9 +5,14 @@
 
 int[] array = GetArray(12, -9, 9);
 
-for (int i = 0; i < array.Length; i++)
+PrintArray(array);
+
+void PrintArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
 {
     Console.Write(array[i] + " ");
+}
 }
 
 int negativeSum = GetNegativeSum(array);
