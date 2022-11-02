@@ -2,17 +2,19 @@
 // положительные элементы замените на соответствующие отрицательные и наоборот.
 // [-4,-8, 8, 2] -> [4, 8, -8, 2]
 
-int[] array = GetArray(4, -9, 9);
+int[] array = GetArray(4, -8, 9);
 PrintArray(array);
 Console.Write(" -> ");
 ArrayElementSwap(array);
 
 void PrintArray(int[] array)
 {
+    Console.Write("[");
     for (int index = 0; index < array.Length; index++)
-{
-    Console.Write(array[index] + " ");
-}
+    {
+        Console.Write(array[index] + " ");
+    }
+    Console.Write("]");
 }
 
 int[] GetArray(int size, int minValue, int maxValue)
@@ -28,7 +30,7 @@ int[] GetArray(int size, int minValue, int maxValue)
 
 static void ArrayElementSwap(int[] array)
 {
-       for (int index = 0; index < array.Length; index++)
+    for (int index = 0; index < array.Length; index++)
     {
         array[index] = array[index] * (-1);
     }
